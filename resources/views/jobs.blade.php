@@ -4,7 +4,7 @@
     </x-slot:heading>
     <ul>
         @foreach ($jobs as $job)
-            <a href="/jobs/1">
+            <a href="/jobs/{{ $job['id'] }}">
                 <li>
                     <strong>{{ $job['title'] }}:</strong> Pays {{ $job['salary'] }} per year
                 </li>
